@@ -1,0 +1,193 @@
+$colorbody:#4A583A;
+$white: white;
+$none:none;
+$yellow: #FED865;
+$width: 800px;
+$padding:20px;
+$center:center;
+$height: 550px;
+$margin0: 0px;
+$margin50:50px;
+$justify: justify;
+$p50: 50px;
+$p15:15px;
+$p10:10px;
+$opacity:50%;
+$margin150:150px;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin column{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin space-beween{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:$padding;
+}
+
+
+body{
+  background-color: $colorbody;
+  margin: $margin0 ;
+}
+
+// nav
+a{
+  color:$white;
+  text-decoration: $none;
+  padding: $padding;
+
+  &:hover{
+    text-decoration: 2px underline $yellow ;
+  }
+}
+
+
+header{
+  @include space-beween();
+}
+
+// article
+article{
+  background-image: url("img/HeroHeader.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: $height;
+  padding:$p50;
+  opacity: $opacity;
+  position: relative;
+}
+
+.textup{
+  z-index: 1;
+  position: absolute;
+  top:20%;
+  margin: $p50;
+}
+
+.textp{
+  width:$opacity;
+}
+
+/*****button****/
+@function sum($param){
+  @if($param == small){
+  @return 100px;
+}@else if($param == medium){
+  @return 400px; 
+}@else{
+  @return  500px;
+}
+}
+
+.btnup{
+      width: sum(small);
+    border-radius: $padding; 
+    padding: $p10;
+    background-color: #4A583A;
+    color:$white;
+    border: 1px solid $white;
+
+    &:hover{
+      background-color: $white;
+      color: $colorbody;
+    }
+}
+
+
+p{
+  color:$white;
+  text-align: $justify;
+}
+
+.girlsSection{
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.sbutton{
+  @include column();
+}
+
+.tit{
+  @include column();
+  margin: $margin50;
+  padding: $padding;
+  gap: $padding ; 
+}
+
+
+
+.buttonm{
+  width: sum(medium);
+  border-radius: $padding;
+  padding:$p15; 
+  margin: $p10;
+  color: $colorbody;
+  text-align: start;
+  background-color: $yellow;
+  border:$none;
+}
+
+
+.buttongo{
+  width: sum(medium);
+  border-radius: $padding;
+  padding: $p15; 
+  margin: $p15;
+  color: $colorbody;
+  border:$none;
+}
+
+/*******/
+
+.listCard{
+    @include flex-center();
+}
+
+hr{
+  width:$width;
+  border-color: $yellow;
+}
+
+.aboutYellow{
+  background-color: $yellow;
+  padding: $padding;
+  @include flex-center();
+  opacity: $opacity;
+}
+
+.textgiu{
+    margin: $margin150;
+    margin-top: $margin0;
+}
+
+footer{
+  background-color: $yellow;
+  @include space-beween();
+}
+
+h5{
+  color: $colorbody;
+}
+
+.ff{
+  display: flex;
+  align-items: center;
+}
+
+.social{
+  padding: $p10;
+  margin-right: $p50;
+}

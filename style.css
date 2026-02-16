@@ -1,0 +1,152 @@
+body {
+  background-color: #4A583A;
+  margin: 0px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+}
+a:hover {
+  -webkit-text-decoration: 2px underline #FED865;
+          text-decoration: 2px underline #FED865;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+article {
+  background-image: url("img/HeroHeader.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+  padding: 50px;
+  opacity: 50%;
+  position: relative;
+}
+
+.textup {
+  z-index: 1;
+  position: absolute;
+  top: 20%;
+  margin: 50px;
+}
+
+.textp {
+  width: 50%;
+}
+
+/*****button****/
+.btnup {
+  width: 100px;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #4A583A;
+  color: white;
+  border: 1px solid white;
+}
+.btnup:hover {
+  background-color: white;
+  color: #4A583A;
+}
+
+p {
+  color: white;
+  text-align: justify;
+}
+
+.girlsSection {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.sbutton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  padding: 20px;
+  gap: 20px;
+}
+
+.buttonm {
+  width: 400px;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 10px;
+  color: #4A583A;
+  text-align: start;
+  background-color: #FED865;
+  border: none;
+}
+
+.buttongo {
+  width: 400px;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 15px;
+  color: #4A583A;
+  border: none;
+}
+
+/*******/
+.listCard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+hr {
+  width: 800px;
+  border-color: #FED865;
+}
+
+.aboutYellow {
+  background-color: #FED865;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 50%;
+}
+
+.textgiu {
+  margin: 150px;
+  margin-top: 0px;
+}
+
+footer {
+  background-color: #FED865;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+h5 {
+  color: #4A583A;
+}
+
+.ff {
+  display: flex;
+  align-items: center;
+}
+
+.social {
+  padding: 10px;
+  margin-right: 50px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,30 @@
+@function width($param){
+  @if($param == small){
+  @return 100px;
+}@else if($param == medium){
+  @return 400px; 
+}@else{
+  @return  500px;
+}
+}
+
+
+@mixin flex-center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin column{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin space-beween{ // header footer
+  display: flex;
+  justify-content: space-between;
+  padding:$padding;
+}
+
